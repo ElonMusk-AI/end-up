@@ -66,7 +66,7 @@ function setup() {
   cloudsGroup = new Group();
   obstaclesGroup = new Group();
   
-  score = 990;
+  score = 0;
 }
 
 function draw() {
