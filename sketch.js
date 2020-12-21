@@ -2,6 +2,7 @@ var WIN = 2;
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
+var bg;
 
 var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
@@ -32,6 +33,8 @@ function preload(){
   
   gameOverImg = loadImage("gameOver.png");
   restartImg = loadImage("restart.png");
+  
+  bg = loadImage("Background.jpg");
 }
 
 function setup() {
@@ -70,7 +73,7 @@ function setup() {
 }
 
 function draw() {
-  background('yellow');
+  background(bg);
 
   camera.position.x = trex.x+250;
   camera.position.y - height/2;
